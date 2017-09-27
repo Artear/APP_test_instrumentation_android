@@ -19,7 +19,7 @@ public class SimpleAdapter extends RecyclerView.Adapter<SimpleVH> {
     @Override
     public SimpleVH onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.item_list, parent);
+        View view = inflater.inflate(R.layout.item_list, parent, false);
         return new SimpleVH(view);
     }
 
