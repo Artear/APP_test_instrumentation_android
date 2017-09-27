@@ -10,7 +10,6 @@ import java.util.List;
 
 public class SimpleAdapter extends RecyclerView.Adapter<SimpleVH> {
 
-
     private List<User> users;
 
     SimpleAdapter(List<User> users){
