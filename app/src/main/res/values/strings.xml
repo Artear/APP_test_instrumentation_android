@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirstTestIntegration</string>
+    <string name="password_hint">Password</string>
+    <string name="name">Name</string>
+    <string name="magic_email">Magic email</string>
+    <string name="new_user">New User</string>
+</resources>
