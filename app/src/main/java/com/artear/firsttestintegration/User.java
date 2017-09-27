@@ -1,7 +1,9 @@
 package com.artear.firsttestintegration;
 
 
-class User {
+import java.io.Serializable;
+
+class User implements Serializable{
 
     private String name;
     private String password;

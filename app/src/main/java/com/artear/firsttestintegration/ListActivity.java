@@ -15,7 +15,11 @@ import java.util.List;
 
 public class ListActivity extends AppCompatActivity {
 
+    public static final int RESULT_USER = 19;
+    public static final String NEW_USER = "new_user";
+
     private List<User> users;
+    private SimpleAdapter adapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,7 +34,8 @@ public class ListActivity extends AppCompatActivity {
         toolbar.setContentInsetsRelative(0, 0);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new SimpleAdapter(users));
+        adapter = new SimpleAdapter(users);
+        recyclerView.setAdapter(adapter);
     }
 
     @Override
@@ -56,6 +61,10 @@ public class ListActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-
+        if(resultCode == RESULT_USER){
+            User user = (User) data.getSerializableExtra(NEW_USER);
+            adapter.addNewUser(user);
+            adapter.notifyDataSetChanged();
+        }
     }
 }

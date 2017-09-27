@@ -9,5 +9,7 @@ class SimpleVH extends RecyclerView.ViewHolder{
 
     public SimpleVH(View itemView) {
         super(itemView);
+
+
     }
 }

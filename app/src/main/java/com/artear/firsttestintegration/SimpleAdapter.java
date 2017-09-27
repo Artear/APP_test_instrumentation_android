@@ -27,6 +27,10 @@ public class SimpleAdapter extends RecyclerView.Adapter<SimpleVH> {
 
     }
 
+    void addNewUser(User user){
+        users.add(user);
+    }
+
     @Override
     public int getItemCount() {
         return users.size();

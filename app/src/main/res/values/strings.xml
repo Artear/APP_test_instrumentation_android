@@ -4,4 +4,5 @@
     <string name="name">Name</string>
     <string name="magic_email">Magic email</string>
     <string name="new_user">New User</string>
+    <string name="submit">Submit</string>
 </resources>
