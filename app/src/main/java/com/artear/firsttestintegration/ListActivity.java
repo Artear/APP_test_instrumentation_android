@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListActivity extends AppCompatActivity {
@@ -18,7 +19,7 @@ public class ListActivity extends AppCompatActivity {
     public static final int RESULT_USER = 19;
     public static final String NEW_USER = "new_user";
 
-    private List<User> users;
+    private List<User> users = new ArrayList<>();
     private SimpleAdapter adapter;
 
     @Override
